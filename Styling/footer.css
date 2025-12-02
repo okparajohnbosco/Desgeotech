@@ -1,0 +1,18 @@
+.hfootss{
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.fir-ft{
+    padding-left: 200px;
+    /* margin-top: 0px; */
+    padding-top: 30px;
+    float: left;
+    padding-right: px;
+}
+.sec-ft{
+    float: left;
+    padding-left: 230px;
+    padding-top: 30px;
+}

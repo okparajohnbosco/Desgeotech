@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} 
+
+/* Basic styling */
+.nav-ba {
+  box-sizing: border-box;
+}
+
+.upnav {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  height: 40px;
+  align-items: center;
+  background: linear-gradient(135deg,
+      rgba(3,37,76,0.92) 0%,
+      rgba(5,85,150,0.9) 35%,
+      rgba(17,125,213,0.9) 60%,
+      rgba(76,163,255,0.9) 100%);
+  padding: 0 1rem;
+}
+
+.dediv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  position: relative; /* for hamburger positioning */
+}
+
+.de-a {
+  color: #5c5b5b;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.fir-ul {
+  list-style-type: none;
+  display: flex;
+  gap: 80px;
+  margin-right: 20px;
+}
+
+.fir-ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: #5c5b5b;
+}
+
+/* Hamburger styling */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #5c5b5b;
+  border-radius: 2px;
+}
+
+/* Responsive for mobile/tablet */
+@media (max-width: 768px) {
+  .fir-ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: white;
+    padding: 1rem;
+    gap: 20px;
+    width: 60%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+
+  .fir-ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .dediv {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .de-a {
+    font-size: 22px;
+  }
+}
+.con-b {
+  display: inline-block;
+  /* padding: 10px 20px; */
+  /* background-color: #2c2cdd;  */
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  /* border-radius: 8px; */
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.con-b:hover {
+  /* background-color: #1b1bb5; */
+}
+.p0{
+  margin-top: 15px;
+}
+.pok{
+  margin-top: 10px;
+  word-break: break-all;      /* wrap long words/emails */
+  overflow-wrap: break-word;  /* extra safety */
+  margin-top: 10px;           /* keep your spacing */
+
+
+}
+@media (max-width: 480px) {
+  .upnav {
+    flex-wrap: wrap;       /* allows items to move to next line */
+    gap: 5px;              /* smaller gap on small screens */
+  }
+
+  .p0, .pok {
+    font-size: 12px;       /* smaller text for phone and email */
+  }
+}

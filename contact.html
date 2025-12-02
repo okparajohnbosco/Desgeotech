@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap5.2/css/bootstrap.css">
+    <link rel="stylesheet" href="./Styling/contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="navbar"></div>
+   <div>
+       
+        <div class="con-fom">
+            <form  id="contact-form" action="https://formspree.io/f/xeovjgze"
+                     method="POST">
+                <div class="fom-box">
+                    <h4>Contact Us</h4>
+                    <div class="na-em">
+                        <div>
+                            <label  class="lsy" for="name">NAME</label><br>
+                            <input class="ne" name="name" required type="text" placeholder="Name" > <br>
+                        </div>
+                        <div>
+                            <label  class="lsy" for="email">EMAIL ADDRESS</label><br>
+                            <input class="ne" name="email" required type="email" placeholder="Email Adress"> <br>
+                        </div>
+                    </div>
+                     <label class="lsy" for="subject">SUBJECT</label><br>
+                    <input type="text" name="subject" required class="su-me " placeholder="About"><br>
+                    <label class="lsy" for="textarea">YOUR MESSAGE</label> <br>
+                    <textarea class="su-me ta" name="message" required placeholder="Your Message here" name="" id=""></textarea><br>
+                    <button class="se-btn">Send Message</button>
+                </div>  
+            </form>
+  
+            <div class="g-box">
+                <iframe class="g-fr" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.5675005388002!2d7.037638974040158!3d5.482365034387728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104259a689cdc0cf%3A0xdb9449fd56ae606c!2sWetheral%20Rd%2C%20Owerri%20460281%2C%20Imo!5e0!3m2!1sen!2sng!4v1762321777933!5m2!1sen!2sng"
+                 width="auto" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+     <div class="fourth-con">
+      <p class="cpy-p">Copyright © 2025 desgeotech survey consult.LTD - All Rights Reserved.</p>
+      <!-- <p><a href="#" class="you-c">Tap to message directly on whatsapp to get intouch</a></p> -->
+      <a href=""> Tap to chat on whatsapp<i class="fa-brands fa-whatsapp"></i></a>
+      <!-- message box -->
+  <p id="form-message" style="display:none;"></p>
+    </div>
+
+   <script src="/First.js"></script>
+</body>
+</html>
